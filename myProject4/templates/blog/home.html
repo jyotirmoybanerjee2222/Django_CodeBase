@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#1 template Basic</title>
+</head>
+<body>
+ <p>This is a simple template to demostarte basic Html Structure</p>
+ <p>Welcome to the blog Home Page</p>
+ <!-- Single Variable -->
+  <p>Name:{{name}}</p>
+  <p>Age:{{age}}</p>
+  <!-- List Access -->
+  <p>First Skill :{{skill.0}}</p>
+  <p>Skill : {{skill}}</p>
+   <!-- Attribute -->
+  <p>User Name:{{user.name}}</p>
+  <p>User Age:{{user.age}}</p>
+    <!-- dict -->
+     <h5>Blog Information</h5>
+     <p>Title:{{blog.title}}</p>
+     <p>Create_At:{{blog.created_at}}</p>
+     <p>Content :{{blog.content | safe}}</p>
+
+     <!-- Nested Value -->
+     <p>Author :{{blog.author.name | safe}}</p>
+
+     <!-- Default Value -->
+     <p>Default Empty Value:{{empty_value|default:"No value Provided"}}</p>
+     <p>Default Empty Value:{{empty_value|default_if_none:"No value Provided"}}</p>
+
+
+
+</body>
+</html>
